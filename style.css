@@ -310,7 +310,7 @@ textarea {
 
 .formcheck input:not(:placeholder-shown):user-valid,
 .formcheck textarea:not(:placeholder-shown):user-valid {
-  outline: green solid 2px; /* Corrected to use 'solid' and specify a width */
+  outline: greenyellow solid 2px; /* Corrected to use 'solid' and specify a width */
 }
 
 .formcheck input:not(:placeholder-shown):user-invalid,
