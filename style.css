@@ -1,0 +1,424 @@
+@import url("https://fonts.cdnfonts.com/css/inter");
+* {
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1rem;
+  user-select: all;
+  padding: 3px;
+  background-color: #333;
+}
+
+hr {
+  border: none; /* Remove the default border */
+  height: 1px;
+}
+
+hr {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #000;
+  width: 100vw;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 0.5rem 1rem;
+  height: calc(10vh - 1rem);
+  width: calc(100% - 2rem);
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 2px #111;
+  margin-bottom: 20px;
+  backdrop-filter: blur(3px);
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logo a {
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0;
+  color: greenyellow;
+  font-family: monospace;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+}
+.social-links li a {
+  display: block; /* Change to inline-block to allow pseudo-elements to work properly */
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: green;
+  position: relative; /* Required for absolute positioning of pseudo-elements */
+}
+
+.social-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* left: -10%; */
+  height: 2px;
+  width: 20%;
+  background-color: greenyellow;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-links li a:hover::before {
+  /* left: 0;*/
+  opacity: 1;
+  width: calc(100% - 20px);
+}
+
+section {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+body {
+  background-image: linear-gradient(#000000ec, #000000e9),
+    url("images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#home,
+#about,
+#contact,
+#calendar {
+  padding-top: 10vh;
+}
+/* 
+#home {
+  padding-bottom: 1rem;
+  background-image: linear-gradient(#000000d2, #000000c9),
+    url("images/Designer.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.quote {
+  font-family: monospace;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(72, 133, 44);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+*::selection {
+  background: rgb(89, 241, 89);
+  color: #111;
+}
+
+.quote::selection,
+.main-quote::selection {
+  background: greenyellow;
+  color: #000;
+}
+
+.main-quote {
+  margin: 0;
+  color: greenyellow;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  height: calc(100% / 3);
+}
+
+.about {
+  min-height: 90vh;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.about > p {
+  padding: 1rem;
+  line-height: 30px;
+}
+
+.testimonials {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.testimonials h3 {
+  text-align: center;
+}
+
+.testimonies {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonial {
+  width: calc(100% / 3);
+  margin-bottom: 20px;
+  background: linear-gradient(#363636d8, #36363648);
+  background: linear-gradient(hsl(#363636d8, transparent));
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonial > blockquote {
+  font-style: italic;
+}
+
+.testimonial:hover {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+  background: none;
+}
+
+blockquote > footer {
+  text-align: right;
+  font-weight: bold;
+  color: green;
+}
+
+.special-thanks {
+  background-color: #3636368f;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.special-thanks .name {
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.special-thanks .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.special-thanks a {
+  text-decoration: none;
+  color: green;
+}
+
+.contact-section {
+  height: 90vh;
+  padding: 1rem;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contact {
+  display: flex;
+  padding: 1rem 0;
+  height: calc(100% - 2rem);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-form {
+  height: max-content;
+  display: flex;
+  padding: 10px 0;
+  background: #161616df;
+  border-radius: 8px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  width: calc(50% - 10px);
+}
+
+.contact-form h3 {
+  margin: 0;
+}
+
+.formcheck {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2px 0;
+  padding: 10px;
+  width: calc(100% - 40px);
+}
+
+.formcheck input,
+textarea {
+  all: unset;
+  background: #ececec;
+  color: #000;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 4px;
+}
+
+.formcheck input:not(:placeholder-shown):invalid,
+.formcheck textarea:not(:placeholder-shown):invalid {
+  outline: yellow solid 2px;
+}
+
+.formcheck input:not(:placeholder-shown):user-valid,
+.formcheck textarea:not(:placeholder-shown):user-valid {
+  outline: green solid 2px; /* Corrected to use 'solid' and specify a width */
+}
+
+.formcheck input:not(:placeholder-shown):user-invalid,
+.formcheck textarea:not(:placeholder-shown):user-invalid {
+  outline: red solid 2px;
+}
+
+input[type="submit"] {
+  all: unset;
+  padding: 9px 14px;
+  background: #ddd;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.contact-information {
+  text-align: center;
+  height: 100%;
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #ddd;
+}
+
+.links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.contact-information a {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: calc(100% / 3);
+  background: #363636b6;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-information a .icon {
+  font-size: 1.5rem;
+}
+
+.contact-information a .icon-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-information p {
+  margin: 10px;
+}
+
+a[data-icon="email"]:hover {
+  color: #ec3232;
+  background: #fff;
+}
+a[data-icon="phone"]:hover {
+  color: blue;
+  background: #fff;
+}
+a[data-icon="github"]:hover {
+  color: #000;
+  background: #fff;
+}
+a[data-icon="instagram"]:hover {
+  color: #a04b06;
+  background: #fff;
+}
+a[data-icon="twitter"]:hover {
+  color: #000;
+  background: #fff;
+}
+a[data-icon="whatsapp"]:hover {
+  color: #31e503;
+  background: #fff;
+}
+
+.session {
+  border-left: 2px solid #fff;
+  padding: 1rem;
+  background: none;
+  margin: 10px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.session a {
+  color: green;
+}
+
+body > footer {
+  margin-top: auto;
+  box-shadow: 0 0 2px #cecece;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+}
