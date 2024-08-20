@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers Hub</title>
+  <style>
+    @import url('./style.css');
+  </style>
+  <link rel="shortcut icon" href="/images/no-bg.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="/script.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Developers Hub Logo">
+      <a href="#home">Developers Hub DIT</a>
+    </div>
+    <ul class="social-links">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+      <li><a href="#calendar">SESSIONS</a></li>
+      <li><a href="https://github.com/developershubdit">RESOURCES</a></li>
+    </ul>
+  </nav>
+  <div id="home">
+    <section class="hero">
+      <h1 class="main-quote">Developer's Hub</h1>
+      <div class="hero-text">
+        <p style="height: 100px; margin: 0; padding: 0;"><span style="color: green;">&Gt;</span> <span class="quote" id="quote"></span></p>
+        <hr>
+      </div>
+      <blockquote>
+        <cite>"Welcome to the forefront of innovation and creativity. Here, we believe in empowering the next
+          generation of dreamers, developers, and creators. Together, we're shaping the future, one line of code at a
+          time. <br>
+          Let's build something amazing."</cite><br>
+        <p>&dash; Elly B, President</p>
+      </blockquote>
+    </section>
+  </div>
+  <div id="about">
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Inaugurated in early 2024, the <code>Developers Hub DIT&copy;</code> is dedicated to advancing and diversifying
+        web development
+        expertise among computer engineering students, both within and beyond the campus confines. <br>
+        Boasting a membership of
+        over 130 individuals as of June 2024, this intellectual sanctuary has proven to be an invaluable resource for
+        both
+        educators and learners alike.</p>
+      <div class="special-thanks">
+        We extend our deepest appreciation to our mentors and patrons whose guidance has been instrumental in our
+        journey.
+        <p><span class="name">&gt; Eng. Elly Bachubila</span>, <span class="title">Founder & President</span></p>
+        <p><span class="name">&gt; Eng. Msambili Ndaga</span>, <span class="title">Tutor</span></p>
+        <p><span class="name">&gt; Eng. Haji Fimbombaya</span>, <span class="title">Head of Computer Studies Department
+            at
+            <a href="https://dit.ac.tz">DIT</a></span></p>
+      </div>
+      <div class="testimonials">
+        <h3>What They Say About Us</h3>
+        <div class="testimonies">
+          <div class="testimonial">
+            <blockquote>
+              <p>"The Developers Hub DIT has been instrumental in my career growth. Their resources are second to none."
+              </p>
+              <footer>- Alumni Member</footer>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>"As an industry professional, I'm impressed by the talent and innovation coming out of the Developers
+                Hub
+                DIT.
+                It's a beacon of future tech leaders."</p>
+              <footer>- Tech Industry Professional</footer>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>"As an industry professional, I'm impressed by the talent and innovation coming out of the Developers
+                Hub
+                DIT.
+                It's a beacon of future tech leaders."</p>
+              <footer>- Tech Industry Professional</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="contact">
+    <section class="contact-section">
+      <h2>CONTACT US</h2>
+      <div class="contact">
+        <form action="formsubmit" method="post" class="contact-form">
+          <h3>Fill all the fields below</h3>
+          <div class="formcheck">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" pattern="^[a-zA-Z\s]+$"
+              title="Full Name (letters and spaces only)" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^\+?[0-9\s\-\(\)]+$"
+              title="Please enter a valid phone number (e.g., +255712345678)" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+          </div>
+
+          <input type="submit" value="Submit">
+        </form>
+
+        <div class="contact-information">
+          <h3>Or contact us via our social networks</h3>
+          <div class="links">
+            <a href="mailto:hub@developers.dit" title="hub@developers.dit" data-icon="email">
+              <span class="icon"><i class="bi bi-envelope"></i></span>
+              <span class="icon-name">E-mail</span>
+            </a>
+            <a href="tel:+255692457741" title="+255692457741" data-icon="phone">
+              <span class="icon"><i class='bi bi-telephone'></i></span>
+              <span class="icon-name">Phone</span>
+            </a>
+            <a href="https://github.com/yourusername" title="GitHub Profile" data-icon="github">
+              <span class="icon"><i class='bi bi-github'></i></span>
+              <span class="icon-name">Github</span>
+            </a>
+            <a href="https://wa.me/yourphonenumber" title="WhatsApp" data-icon="whatsapp">
+              <span class="icon"><i class='bi bi-whatsapp'></i></span>
+              <span class="icon-name">Whatsapp</span>
+            </a>
+            <a href="https://www.instagram.com/yourusername/" title="Instagram Profile" data-icon="instagram">
+              <span class="icon"><i class='bi bi-instagram'></i></span>
+              <span class="icon-name">Instagram</span>
+            </a>
+            <a href="https://www.x.com/yourusername/" title="Twitter Profile" data-icon="twitter">
+              <span class="icon"><i class="bi bi-twitter-x"></i></span>
+              <span class="icon-name">Twitter</span>
+            </a>
+          </div>
+          <p>Please note that contacting us through email, WhatsApp, or phone will typically receive a reply within 24
+            hours.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <div id="calendar">
+    <section class="join-us">
+      <h2 style="text-align: center; margin: 0;">SESSIONS</h2>
+      <P>You're warmly welcome to join us on our next sessions as shown below:</P>
+      <div class="calendar">
+        <div class="session">
+          <h3>Session 1</h3>
+          <p>Date: TBD</p>
+          <p>Topic: Introduction to Web Development</p>
+          <p>Time: TBD</p>
+          <p>Means: Online</p>
+          <p>Location: Zoom Meeting Room</p>
+          <a href="#">Register Now</a>
+        </div>
+        <div class="session">
+          <h3>Session 2</h3>
+          <p>Date: TBD</p>
+          <p>Topic: Advanced JavaScript Techniques</p>
+          <p>Time: TBD</p>
+          <p>Means: TBD</p>
+          <p>Location: TBD</p>
+          <a href="#">Register Now</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p style="text-align: center;">2024 Developers Hub DIT &copy; <span style="color: greenyellow;">Confidants and
+        guides in the realm of innovation</span></p>
+  </footer>
+</body>
+
+</html>
