@@ -163,10 +163,8 @@ body {
   background-attachment: fixed;
 }
 
-#about,
-#contact,
 #calendar {
-  padding-top: 10vh;
+  height: 90vh;
 }
 
 .hero {
@@ -445,6 +443,30 @@ input[type="submit"]:hover {
 .contact-information a .icon-name {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.to-top {
+  all: unset;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: #ffff;
+  background: #000;
+  font-size: 2.7rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.to-top:hover {
+  color: #000;
+  background: #fff;
 }
 
 /* a[data-icon="email"] {
