@@ -20,19 +20,29 @@
       <img src="images/logo.png" alt="Developers Hub Logo">
       <a href="#home">Developers Hub DIT</a>
     </div>
-    <ul class="social-links">
+    <ul class="nav-links">
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#contact">CONTACT US</a></li>
       <li><a href="#calendar">SESSIONS</a></li>
-      <li><a href="https://github.com/developershubdit">RESOURCES</a></li>
+      <li><a href="https://github.com/developershubdit" target="_blank">RESOURCES</a></li>
     </ul>
+    <button type="menu" class="nav-menu" id="menuButton">
+      <i class="bi bi-list menu-button"></i>
+      <i class="bi bi-x menu-button"></i>
+    </button>
   </nav>
+  <div class="navlinks" id="menu">
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT US</a>
+    <a href="#calendar">SESSIONS</a>
+    <a href="https://github.com/developershubdit" target="_blank">RESOURCES</a>
+  </div>
   <div id="home">
     <section class="hero">
       <h1 class="main-quote">Developer's Hub</h1>
       <div class="hero-text">
-        <p style="height: 100px; margin: 0; padding: 0;"><span style="color: green;">&Gt;</span> <span class="quote"
-            id="quote"></span></p>
+        <span style="color: #fff; text-align: end;">&gt; </span>
+        <p class="quote" id="quote"></p>
         <hr>
       </div>
       <blockquote>
@@ -55,8 +65,7 @@
         both
         educators and learners alike.</p>
       <div class="special-thanks">
-        We extend our deepest appreciation to our mentors and patrons whose guidance has been instrumental in our
-        journey.
+        We extend our deepest appreciation to our mentors and patrons.
         <p><span class="name">&gt; Eng. Elly Bachubila</span>, <span class="title">Founder & President</span></p>
         <p><span class="name">&gt; Eng. Msambili Ndaga</span>, <span class="title">Tutor</span></p>
         <p><span class="name">&gt; Eng. Haji Fimbombaya</span>, <span class="title">Head of Computer Studies Department
@@ -128,34 +137,38 @@
         </form>
 
         <div class="contact-information">
-          <h3>Or contact us via our social networks</h3>
+          <h3>Our social networks</h3>
           <div class="links">
-            <a href="mailto:hub@developers.dit" title="hub@developers.dit" data-icon="email">
-              <span class="icon"><i class="bi bi-envelope"></i></span>
-              <span class="icon-name">E-mail</span>
-            </a>
-            <a href="tel:+255692457741" title="+255692457741" data-icon="phone">
-              <span class="icon"><i class='bi bi-telephone'></i></span>
-              <span class="icon-name">Phone</span>
-            </a>
-            <a href="https://github.com/yourusername" title="GitHub Profile" data-icon="github">
-              <span class="icon"><i class='bi bi-github'></i></span>
-              <span class="icon-name">Github</span>
-            </a>
-            <a href="https://wa.me/yourphonenumber" title="WhatsApp" data-icon="whatsapp">
-              <span class="icon"><i class='bi bi-whatsapp'></i></span>
-              <span class="icon-name">Whatsapp</span>
-            </a>
-            <a href="https://www.instagram.com/yourusername/" title="Instagram Profile" data-icon="instagram">
-              <span class="icon"><i class='bi bi-instagram'></i></span>
-              <span class="icon-name">Instagram</span>
-            </a>
-            <a href="https://www.x.com/yourusername/" title="Twitter Profile" data-icon="twitter">
-              <span class="icon"><i class="bi bi-twitter-x"></i></span>
-              <span class="icon-name">Twitter</span>
-            </a>
+            <div class="row">
+              <a href="mailto:hub@developers.dit" title="hub@developers.dit" data-icon="email">
+                <span class="icon"><i class="bi bi-envelope"></i></span>
+                <span class="icon-name">E-mail</span>
+              </a>
+              <a href="tel:+255692457741" title="+255692457741" data-icon="phone">
+                <span class="icon"><i class='bi bi-telephone'></i></span>
+                <span class="icon-name">Phone</span>
+              </a>
+              <a href="https://github.com/yourusername" title="GitHub Profile" data-icon="github">
+                <span class="icon"><i class='bi bi-github'></i></span>
+                <span class="icon-name">Github</span>
+              </a>
+            </div>
+            <div class="row">
+              <a href="https://wa.me/yourphonenumber" title="WhatsApp" data-icon="whatsapp">
+                <span class="icon"><i class='bi bi-whatsapp'></i></span>
+                <span class="icon-name">Whatsapp</span>
+              </a>
+              <a href="https://www.instagram.com/yourusername/" title="Instagram Profile" data-icon="instagram">
+                <span class="icon"><i class='bi bi-instagram'></i></span>
+                <span class="icon-name">Instagram</span>
+              </a>
+              <a href="https://www.x.com/yourusername/" title="Twitter Profile" data-icon="twitter">
+                <span class="icon"><i class="bi bi-twitter-x"></i></span>
+                <span class="icon-name">Twitter</span>
+              </a>
+            </div>
           </div>
-          <p>Please note that contacting us through email, WhatsApp, or phone will typically receive a reply within 24
+          <p>Upon contacting us, you will typically receive a reply within 24
             hours.
           </p>
         </div>
@@ -166,7 +179,8 @@
   <div id="calendar">
     <section class="join-us">
       <h2 style="text-align: center; margin: 0;">SESSIONS</h2>
-      <P>You're warmly welcome to join us on our next sessions as shown below:</P>
+      <p style="text-align: center;">You're warmly welcome to join us on our next sessions as shown below:</p
+        style="text-align: center;">
       <div class="calendar">
         <div class="session">
           <h3>Session 1</h3>
