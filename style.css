@@ -1,4 +1,4 @@
-/* @import url("https://fonts.cdnfonts.com/css/inter"); */
+@import url("https://fonts.cdnfonts.com/css/inter");
 * {
   font-family: "Inter", sans-serif;
 }
@@ -89,7 +89,6 @@ nav {
 }
 
 .logo > img {
-  /* height: 100px; */
   width: 100px;
   object-fit: contain;
   object-position: center;
@@ -127,7 +126,6 @@ nav {
   content: "";
   position: absolute;
   bottom: 0;
-  /* left: -10%; */
   height: 2px;
   width: 20%;
   background-color: greenyellow;
@@ -136,7 +134,6 @@ nav {
 }
 
 .nav-links li a:hover::before {
-  /* left: 0;*/
   opacity: 1;
   width: calc(100% - 20px);
 }
@@ -156,14 +153,13 @@ section > h2 {
 }
 
 body {
-  background-image: linear-gradient(#000000f2, #000000e9),
-    url("images/background.jpeg");
+  background-image: linear-gradient(to top, #0c1801ee, #000000), url('./images/background.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-#calendar {
+#sessions-section {
   min-height: 90vh;
 }
 
@@ -184,6 +180,14 @@ body {
   min-height: 6rem;
   width: 100%;
   align-items: center;
+}
+.welcome-text {
+  width: calc(100% - 2rem);
+}
+.welcome-text p {
+  font-family: monospace;
+  color: greenyellow;
+  font-size: 1rem;
 }
 
 .quote {
@@ -244,7 +248,7 @@ body {
   background: radial-gradient(ellipse at top, #1d3a03, transparent);
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(50, 86, 31, 0.902);
+  box-shadow: inset 0 2px 4px rgba(50, 86, 31, 0.902);
   transition: all 1s ease-in-out;
 }
 
@@ -253,7 +257,7 @@ body {
 }
 
 .testimonial:hover {
-  box-shadow: inset 0 0 2px #1d3a03;
+  box-shadow: 0 0 2px #1d3a03;
 }
 
 blockquote > footer {
@@ -309,6 +313,7 @@ blockquote > footer {
   max-width: 500px;
   border-radius: 8px;
   background: radial-gradient(ellipse at top, #1d3a03, transparent);
+  /* background: radial-gradient(ellipse at top, #c0dda8, transparent); */
   box-shadow: 0 2px 4px rgba(50, 86, 31, 0.902);
   align-items: center;
   flex-direction: column;
@@ -461,6 +466,7 @@ input[type="submit"]:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 999;
   transition: all 0.5s ease-in-out;
 }
 
@@ -492,7 +498,7 @@ a[data-icon]:hover {
   color: #000;
 }
 
-.calendar {
+.sessions-section {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -663,6 +669,12 @@ body > footer > p > span {
 }
 
 @media (max-width: 545px) {
+  .quote {
+    font-size: 1.2rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
   .session {
     min-width: 400px;
     max-width: 500px;
@@ -685,9 +697,6 @@ body > footer > p > span {
 }
 
 @media (max-width: 400px) {
-  .quote {
-    font-size: 1.2rem;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
