@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButtonIcons[0].classList.add("visible-menu-button");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 300) {
       document.getElementById("toTopButton").style.display = "flex";
     } else {
       document.getElementById("toTopButton").style.display = "none";
@@ -55,6 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.overflow = isEnabled ? "auto" : "hidden";
   }
 
+  function hideMenu() {
+    menu.classList.remove("visible");
+    toggleButtonIcons.forEach((icon) => {
+      if (icon.classList.contains("visible-menu-button")) {
+        icon.classList.toggle("fade-animation");
+        setTimeout(() => icon.classList.remove("fade-animation"), 500);
+      }
+      icon.classList.toggle("visible-menu-button");
+    });
+  }
+
+  menu.addEventListener("click", hideMenu);
+
   toggleButton.addEventListener("click", function () {
     toggleButtonIcons.forEach((icon) => {
       if (icon.classList.contains("visible-menu-button")) {
@@ -64,6 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
       icon.classList.toggle("visible-menu-button");
     });
     menu.classList.toggle("visible");
-    toggleScrolling(!menu.classList.contains("visible"));
   });
 });
