@@ -144,7 +144,7 @@ nav {
 section {
   padding: 1rem;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 section > h2 {
@@ -164,7 +164,7 @@ body {
 }
 
 #calendar {
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .hero {
@@ -459,8 +459,8 @@ input[type="submit"]:hover {
   background: #000;
   font-size: 2.7rem;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 20px;
+  right: 20px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -507,7 +507,8 @@ a[data-icon]:hover {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(50, 86, 31, 0.902);
-  max-width: 300px;
+  min-width: 400px;
+  max-width: 450px;
   text-transform: capitalize;
   transition: all 0.5s ease-in-out;
 }
@@ -663,7 +664,8 @@ body > footer > p > span {
 
 @media (max-width: 545px) {
   .session {
-    max-width: 400px;
+    min-width: 400px;
+    max-width: 500px;
   }
   .contact-information,
   .contact-form {
@@ -683,6 +685,9 @@ body > footer > p > span {
 }
 
 @media (max-width: 400px) {
+  .quote {
+    font-size: 1.2rem;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -705,9 +710,10 @@ body > footer > p > span {
     height: 40px;
   }
 
-  .session {
-    max-width: 200px;
-    width: 300px;
+  .session,
+  .contact-form {
+    min-width: 320px;
+    max-width: 370px;
   }
 
   body > footer > p,
