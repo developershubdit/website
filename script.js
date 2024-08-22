@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     section.style.paddingTop = `${navbarHeight + 5}px`;
   });
 
-  document.querySelectorAll("section")[0].style.paddingTop = `0px`;
-
   function toTop() {
     topOfThePage.scrollIntoView({ behavior: "smooth" });
   }
