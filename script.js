@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
     topOfThePage.scrollIntoView({ behavior: "smooth" });
   }
 
+  var navlinks = document.querySelectorAll("[navLink]");
+  navlinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const navigateTo = e.target.href.split("#")[1];
+      document
+        .getElementById(navigateTo.toString())
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
   document.getElementById("toTopButton").addEventListener("click", toTop);
   // Initial state
   document.getElementById("toTopButton").style.display = "none";
