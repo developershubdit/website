@@ -779,6 +779,9 @@ body > footer > p > span {
     min-width: 370px;
     max-width: 400px;
   }
+  .contact-form{
+    padding: 1rem 0;
+  }
   .contact-information,
   .contact-form {
     width: calc(100% - 20px);
@@ -826,6 +829,6 @@ body > footer > p > span {
 
   body > footer > p,
   body > footer > p > span {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
   }
 }
