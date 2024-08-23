@@ -8,7 +8,7 @@
   <style>
     @import url('./style.css');
   </style>
-  <link rel="shortcut icon" href="/images/no-bg.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/typeit@8.8.4/dist/index.umd.min.js"></script>
   <script src="script.js" defer></script>
@@ -18,12 +18,12 @@
   <nav>
     <div class="logo">
       <img src="images/logo.png" alt="Developers Hub Logo">
-      <a href="#home">Developers Hub DIT</a>
+      <a navLink="true" href="#home">Developers Hub DIT</a>
     </div>
     <ul class="nav-links">
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#contact">CONTACT US</a></li>
-      <li><a href="#sessions-section">SESSIONS</a></li>
+      <li><a navLink="true" href="#about">ABOUT</a></li>
+      <li><a navLink="true" href="#contact">CONTACT US</a></li>
+      <li><a navLink="true" href="#sessions-section">SESSIONS</a></li>
       <li><a href="https://github.com/developershubdit" target="_blank">RESOURCES</a></li>
     </ul>
     <button type="menu" class="nav-menu" id="menuButton">
@@ -32,26 +32,17 @@
     </button>
   </nav>
   <div class="navlinks" id="menu">
-    <a href="#about">ABOUT</a>
-    <a href="#contact">CONTACT US</a>
-    <a href="#sessions-section">SESSIONS</a>
+    <a navLink="true" href="#about">ABOUT</a>
+    <a navLink="true" href="#contact">CONTACT US</a>
+    <a navLink="true" href="#sessions-section">SESSIONS</a>
     <a href="https://github.com/developershubdit" target="_blank">RESOURCES</a>
   </div>
   <div id="home">
     <section class="hero">
-      <h1 class="main-quote">Developer's Hub</h1>
-      <div class="hero-text">
-        <span style="color: #fff; text-align: end;">&gt; </span>
-        <p class="quote" id="quote"></p>
-        <hr>
-      </div>
-      <blockquote class="welcome-text">
-        <cite>Welcome to the forefront of innovation and creativity. Here, we believe in empowering the next
-          generation of dreamers, developers, and creators. Together, we're shaping the future, one line of code at a
-          time. <br>
-          Let's build something amazing.</cite><br>
-        <p>&dash; Elly B, President</p>
-      </blockquote>
+      <h1 class="main-quote"><span>Welcome to The</span> Developer's Hub</h1>
+      <h2> &lt; Coding the Canvas of Tomorrow /&gt;</h2>
+      <p>Join our vibrant community where ideas flourish, skills are honed, and innovation knows no bound. Empowering your journey through the digital landscape</p>
+      <a class="registration-link" href="#">Sign up! <i class="bi bi-arrow-right"></i></a>
     </section>
   </div>
   <div id="about">
@@ -60,17 +51,34 @@
       <p>Inaugurated in early 2024, the <code>Developers Hub DIT&copy;</code> is dedicated to advancing and diversifying
         web development
         expertise among computer engineering students, both within and beyond the campus confines. <br>
-        Boasting a membership of
-        over 130 individuals as of June 2024, this intellectual sanctuary has proven to be an invaluable resource for
-        both
-        educators and learners alike.</p>
+      </p>
+      <blockquote class="welcome-text">
+        <cite>Welcome to the epicenter of digital innovation and creative problem-solving. At Developer's Hub, we're not
+          just
+          observers of technological advancement—we're its architects. Our mission is to empower and inspire the next
+          generation
+          of developers, innovators, and visionaries who dare to challenge the status quo.
+
+          In this collaborative sanctuary, we foster an environment where ideas flourish, skills are honed, and
+          groundbreaking
+          solutions are born. Whether you're taking your first steps in coding or pushing the boundaries of what's
+          possible in
+          tech, you'll find a community ready to support, challenge, and elevate you.
+
+          Join us as we code, create, and innovate our way into a future limited only by our imagination. Together,
+          we're not just
+          preparing for the digital age—we're defining it.
+
+        </cite><br>
+        <p>&dash; Elly B, President</p>
+      </blockquote>
       <div class="special-thanks">
         We extend our deepest appreciation to our mentors and patrons.
         <p><span class="name">&gt; Eng. Elly Bachubila</span>, <span class="title">Founder & President</span></p>
         <p><span class="name">&gt; Eng. Msambili Ndaga</span>, <span class="title">Tutor</span></p>
         <p><span class="name">&gt; Eng. Haji Fimbombaya</span>, <span class="title">Head of Computer Studies Department
             at
-            <a href="https://dit.ac.tz">DIT</a></span></p>
+            <a href="https://dit.ac.tz" target="_blank">DIT</a></span></p>
       </div>
       <div class="testimonials">
         <h3>What They Say About Us</h3>
@@ -207,8 +215,7 @@
     <i class="bi bi-arrow-up-circle"></i>
   </button>
   <footer>
-    <p style="text-align: center;">2024 Developers Hub DIT &copy; <span style="color: greenyellow;">Confidants and
-        guides in the realm of innovation</span></p>
+    <p style="text-align: center;">2024 <span>Developers Hub DIT&copy;</span></p>
   </footer>
 </body>
 
