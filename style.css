@@ -153,7 +153,8 @@ section > h2 {
 }
 
 body {
-  background-image: linear-gradient(to top, #0c1801ee, #000000), url('./images/background.jpeg');
+  background-image: linear-gradient(to top, #0c1801ee, #000000),
+    url("./images/background.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -679,6 +680,9 @@ body > footer > p > span {
     min-width: 400px;
     max-width: 500px;
   }
+  .contact-form {
+    padding: 1rem 0;
+  }
   .contact-information,
   .contact-form {
     width: calc(100% - 20px);
@@ -727,7 +731,7 @@ body > footer > p > span {
 
   body > footer > p,
   body > footer > p > span {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     font-family: monospace;
   }
 }
