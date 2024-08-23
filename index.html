@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers Hub</title>
+  <style>
+    @import url('./style.css');
+  </style>
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.8.4/dist/index.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.png" alt="Developers Hub Logo">
+      <a navLink="true" href="#home">Developers Hub DIT</a>
+    </div>
+    <ul class="nav-links">
+      <li><a navLink="true" href="#about">ABOUT</a></li>
+      <li><a navLink="true" href="#contact">CONTACT US</a></li>
+      <li><a navLink="true" href="#sessions-section">SESSIONS</a></li>
+      <li><a href="https://github.com/developershubdit" target="_blank">RESOURCES</a></li>
+    </ul>
+    <button type="menu" class="nav-menu" id="menuButton">
+      <i class="bi bi-list menu-button"></i>
+      <i class="bi bi-x menu-button"></i>
+    </button>
+  </nav>
+  <div class="navlinks" id="menu">
+    <a navLink="true" href="#about">ABOUT</a>
+    <a navLink="true" href="#contact">CONTACT US</a>
+    <a navLink="true" href="#sessions-section">SESSIONS</a>
+    <a href="https://github.com/developershubdit" target="_blank">RESOURCES</a>
+  </div>
+  <div id="home">
+    <section class="hero">
+      <h1 class="main-quote"><span>Welcome to The</span> Developer's Hub</h1>
+      <h2> &lt; Coding the Canvas of Tomorrow /&gt;</h2>
+      <p>Join our vibrant community where ideas flourish, skills are honed, and innovation knows no bound. Empowering
+        your journey through the digital landscape</p>
+      <a class="registration-link" href="#">Sign up! <i class="bi bi-arrow-right"></i></a>
+    </section>
+  </div>
+  <div id="about">
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Inaugurated in early 2024, the <code>Developers Hub DIT&copy;</code> is dedicated to advancing and diversifying
+        web development
+        expertise among computer engineering students, both within and beyond the campus confines. <br>
+      </p>
+      <blockquote class="welcome-text">
+        <cite>Welcome to the epicenter of digital innovation and creative problem-solving. At Developer's Hub, we're not
+          just
+          observers of technological advancement—we're its architects. Our mission is to empower and inspire the next
+          generation
+          of developers, innovators, and visionaries who dare to challenge the status quo.
+
+          In this collaborative sanctuary, we foster an environment where ideas flourish, skills are honed, and
+          groundbreaking
+          solutions are born. Whether you're taking your first steps in coding or pushing the boundaries of what's
+          possible in
+          tech, you'll find a community ready to support, challenge, and elevate you.
+
+          Join us as we code, create, and innovate our way into a future limited only by our imagination. Together,
+          we're not just
+          preparing for the digital age—we're defining it.
+
+        </cite><br>
+        <p>&dash; Elly B, President</p>
+      </blockquote>
+      <div class="special-thanks">
+        We extend our deepest appreciation to our mentors and patrons.
+        <p><span class="name">&gt; Eng. Elly Bachubila</span>, <span class="title">Founder & President</span></p>
+        <p><span class="name">&gt; Eng. Msambili Ndaga</span>, <span class="title">Tutor</span></p>
+        <p><span class="name">&gt; Eng. Haji Fimbombaya</span>, <span class="title">Head of Computer Studies Department
+            at
+            <a href="https://dit.ac.tz" target="_blank">DIT</a></span></p>
+      </div>
+      <div class="testimonials">
+        <h3>What They Say About Us</h3>
+        <div class="testimonies">
+          <div class="testimonial">
+            <blockquote>
+              <p>"The Developers Hub DIT has been instrumental in my career growth. Their resources are second to none."
+              </p>
+              <footer>- Alumni Member</footer>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>"As an industry professional, I'm impressed by the talent and innovation coming out of the Developers
+                Hub
+                DIT.
+                It's a beacon of future tech leaders."</p>
+              <footer>- Tech Industry Professional</footer>
+            </blockquote>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>"As an industry professional, I'm impressed by the talent and innovation coming out of the Developers
+                Hub
+                DIT.
+                It's a beacon of future tech leaders."</p>
+              <footer>- Tech Industry Professional</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="contact">
+    <section class="contact-section">
+      <h2>CONTACT US</h2>
+      <div class="contact">
+        <form action="https://formsubmit.co/1069b38a9671880356b1f0d33648db57" method="post" class="contact-form">
+          <h3>Fill all the fields below</h3>
+          <div class="formcheck">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" pattern="^[a-zA-Z\s]+$"
+              title="Full Name (letters and spaces only)" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^\+?[0-9\s\-\(\)]+$"
+              title="Please enter a valid phone number (e.g., +255712345678)" required>
+          </div>
+
+          <div class="formcheck">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+          </div>
+
+          <input type="submit" value="Submit">
+        </form>
+
+        <div class="contact-information">
+          <h3>Our social networks</h3>
+          <div class="links">
+            <div class="row">
+              <a href="mailto:hub@developers.dit" title="hub@developers.dit" data-icon="email">
+                <span class="icon"><i class="bi bi-envelope"></i></span>
+                <span class="icon-name">E-mail</span>
+              </a>
+              <a href="tel:+255692457741" title="+255692457741" data-icon="phone">
+                <span class="icon"><i class='bi bi-telephone'></i></span>
+                <span class="icon-name">Phone</span>
+              </a>
+              <a href="https://github.com/yourusername" title="GitHub Profile" data-icon="github">
+                <span class="icon"><i class='bi bi-github'></i></span>
+                <span class="icon-name">Github</span>
+              </a>
+            </div>
+            <div class="row">
+              <a href="https://wa.me/yourphonenumber" title="WhatsApp" data-icon="whatsapp">
+                <span class="icon"><i class='bi bi-whatsapp'></i></span>
+                <span class="icon-name">Whatsapp</span>
+              </a>
+              <a href="https://www.instagram.com/yourusername/" title="Instagram Profile" data-icon="instagram">
+                <span class="icon"><i class='bi bi-instagram'></i></span>
+                <span class="icon-name">Instagram</span>
+              </a>
+              <a href="https://www.x.com/yourusername/" title="Twitter Profile" data-icon="twitter">
+                <span class="icon"><i class="bi bi-twitter-x"></i></span>
+                <span class="icon-name">Twitter</span>
+              </a>
+            </div>
+          </div>
+          <p>Upon contacting us, you will typically receive a reply within 24
+            hours.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <div id="sessions-section">
+    <section class="join-us">
+      <h2 style="text-align: center; margin: 0;">SESSIONS</h2>
+      <p style="text-align: center;">You're warmly welcome to join us on our next sessions as shown below:</p
+        style="text-align: center;">
+      <div class="sessions-section">
+        <div class="session">
+          <h3>Session 1</h3>
+          <p>Date: TBD</p>
+          <p>Topic: Introduction to Web Development</p>
+          <p>Time: TBD</p>
+          <p>Means: Online</p>
+          <p>Location: Zoom Meeting Room</p>
+          <a href="#">Register Now</a>
+        </div>
+        <div class="session">
+          <h3>Session 2</h3>
+          <p>Date: TBD</p>
+          <p>Topic: Advanced JavaScript Techniques</p>
+          <p>Time: TBD</p>
+          <p>Means: TBD</p>
+          <p>Location: TBD</p>
+          <a href="#">Register Now</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <button type="button" class="to-top" id="toTopButton">
+    <i class="bi bi-arrow-up-circle"></i>
+  </button>
+  <footer>
+    <p style="text-align: center;">2024 <span>Developers Hub DIT&copy;</span></p>
+  </footer>
+</body>
+
+</html>
